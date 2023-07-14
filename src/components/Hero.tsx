@@ -5,9 +5,10 @@ function Hero() {
     <>
       <div
         id="hero"
-        className="bg-purple-400 p-10 py-[5rem] flex flex-col items-center"
+        className="bg-purple-400 p-10 py-[10rem] flex flex-col items-center"
       >
-        <h1>Hero Section</h1>
+        <h1 className="text-3xl font-bold">Bassima Ghassan</h1>
+        <p>Frontend developer</p>
       </div>
     </>
   );
