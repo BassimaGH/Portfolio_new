@@ -31,7 +31,7 @@ function WorkExperience() {
           {experiences.map((experience, i) => {
             return (
               <div className="">
-                {i % 2 == 0 ? (
+                {i % 2 === 0 ? (
                   <div className="border border-slate-900 p-10 flex flex-col col-span-2 row-span-2">
                     <h1>{experience.role}</h1>
                     <h2>{experience.company}</h2>
