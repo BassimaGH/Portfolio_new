@@ -23,27 +23,26 @@ function WorkExperience() {
     <>
       <div
         id="work_experience"
-        className="bg-pink-400 p-10 py-[5rem] flex flex-col items-center"
+        className="p-10 py-[5rem] text-primaryLight flex flex-col items-center"
       >
-        <h1>Work Experience</h1>
+        <h1 className="mb-[3rem] text-3xl">Work Experience</h1>
         {/* Make a grid with divs that contain information about my experience: role, company name, and duration.(Make arrange the dives in a zigzag. Make them float and add animation when the are shown on the screen)*/}
-        <div className="grid grid-rows-3 grid-cols-2">
+        <div className="flex flex-col md:grid grid-cols-2 grid-rows-3 items-start gap-5">
           {experiences.map((experience, i) => {
             return (
-              <div className="">
-                {i % 2 === 0 ? (
-                  <div className="border border-slate-900 p-10 flex flex-col col-span-2 row-span-2">
-                    <h1>{experience.role}</h1>
-                    <h2>{experience.company}</h2>
-                    <span>{experience.duration}</span>
-                  </div>
-                ) : (
-                  <div className="border border-blue-900 p-10 flex flex-col col-span-1 row-span-1">
-                    <h1>{experience.role}</h1>
-                    <h2>{experience.company}</h2>
-                    <span>{experience.duration}</span>
-                  </div>
-                )}
+              <div
+                key={i}
+                className={
+                  i % 2 === 0
+                    ? "w-[33rem] md:w-auto bg-primaryLight text-primaryDark rounded-3xl p-10 flex flex-col gap-2 col-start-2 col-end-1 row-span-2"
+                    : "w-[33rem] md:w-auto bg-primaryLight text-primaryDark rounded-3xl p-10 flex flex-col gap-2 col-start-2 col-end-2 row-start-2"
+                }
+              >
+                <h1 className="font-bold text-2xl">{experience.role}</h1>
+                <h2>{experience.company}</h2>
+                <span className="font-thin text-primaryAccent">
+                  {experience.duration}
+                </span>
               </div>
             );
           })}

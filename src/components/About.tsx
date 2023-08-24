@@ -5,13 +5,13 @@ function About() {
     <>
       <div
         id="about"
-        className="bg-blue-400 p-10 py-[5rem] flex flex-col items-start"
+        className="bg-primaryLight p-[10rem] py-[5rem] h-[35rem] text-primaryDark flex flex-col justify-center items-start"
       >
-        <h1 className="text-3xl font-bold">About</h1>
-        <p className="pr-0 md:pr-[35rem]">
+        <h1 className="text-[3rem] font-bold">About</h1>
+        <p className="pr-0 lg:pr-[35rem] text-[1.5rem]">
           I am a front-end developer that has a solid programming foundation and
           is passionate about learning new programming technologies. My current
-          programming <u>stack</u> makes it possible for me to create and deploy
+          programming stack makes it possible for me to create and deploy
           websites or web-applications that are fully responsive and secure.
         </p>
       </div>

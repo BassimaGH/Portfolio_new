@@ -65,39 +65,49 @@ function Navigation() {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            <FiMenu className="cursor-pointer text-gray-900 text-[2rem] mobile:text-[2.5rem] hover:text-slate-500 transition ease-in-out" />
+            <FiMenu className="cursor-pointer text-primaryLight text-[2rem] mobile:text-[2.5rem] hover:text-slate-500 transition ease-in-out" />
           </div>
 
           <div
             className={
               isNavExpanded
                 ? "hidden lg:flex"
-                : "flex z-40 fixed right-0 top-0 h-screen"
+                : "flex z-40 fixed lg:static right-0 top-0 h-screen lg:h-auto"
             }
           >
-            <ul className="flex flex-col lg:flex-row gap-12 text-right p-[4rem] bg-yellow-500 lg:bg-transparent lg:p-0 items-end lg:items-center">
+            <ul className="flex flex-col lg:flex-row gap-12 text-right p-[4rem] bg-primaryAccent lg:bg-transparent lg:p-0 items-end lg:items-center">
               <div
                 className="block self-start lg:hidden"
                 onClick={() => {
                   setIsNavExpanded(!isNavExpanded);
                 }}
               >
-                <MdClose className="cursor-pointer text-gray-900 text-2xl hover:text-slate-500 transition ease-in-out" />
+                <MdClose className="cursor-pointer text-primaryLight text-2xl hover:text-slate-500 transition ease-in-out" />
               </div>
               <div className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
                 {navItems.map((item, i) => {
-                  return (
-                    <Link smooth to={"#" + item.to} key={i}>
-                      <li
-                        className="text-xl font-clashDisplay text-gray-900 hover:text-slate-600 transition ease-in-out"
-                        onClick={() => {
-                          setIsNavExpanded(!isNavExpanded);
-                        }}
-                      >
-                        {item.title}
-                      </li>
-                    </Link>
-                  );
+                  if (window.innerWidth < 1022) {
+                    return (
+                      <Link smooth to={"#" + item.to} key={i}>
+                        <li
+                          className="text-xl font-clashDisplay text-primaryLight hover:text-slate-600 transition ease-in-out"
+                          onClick={() => {
+                            setIsNavExpanded(!isNavExpanded);
+                          }}
+                        >
+                          {item.title}
+                        </li>
+                      </Link>
+                    );
+                  } else {
+                    return (
+                      <Link smooth to={"#" + item.to} key={i}>
+                        <li className="text-xl font-clashDisplay text-primaryLight hover:text-slate-600 transition ease-in-out">
+                          {item.title}
+                        </li>
+                      </Link>
+                    );
+                  }
                 })}
               </div>
             </ul>
