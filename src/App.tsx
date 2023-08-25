@@ -9,7 +9,7 @@ import WorkExperience from "./components/WorkExperience";
 function App() {
   return (
     <>
-      <div className="overflow-hidden bg-primaryDark">
+      <div className="overflow-hidden bg-primaryDark m-1">
         <header>
           <Navigation />
         </header>
