@@ -52,7 +52,7 @@ function Navigation() {
     <>
       <div
         data-aos="fade-down"
-        className="p-10  mx-[2rem] flex flex-row justify-between items-center"
+        className="p-10 mx-[1rem] sm:mx-[2rem] flex flex-row justify-between items-center"
       >
         <div className="">
           <img src={logo} alt="my_logo" className="w-[3rem]" />

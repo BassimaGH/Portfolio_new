@@ -12,10 +12,10 @@ type Props = {
 function ProjectCard(props: Props) {
   return (
     <>
-      <div className="bg-primaryDark border border-4 border-primaryDark text-primaryLight rounded-3xl w-[25rem] ">
+      <div className="bg-primaryDark border border-4 border-primaryDark flex flex-col text-primaryLight rounded-3xl w-[22rem] sm:w-[25rem] ">
         <img
           src={props.project_img}
-          className="rounded-t-3xl"
+          className="rounded-t-3xl h-[16.5rem] self-center opacity-75 hover:opacity-100 transition ease-in-out"
           alt="project_img"
         />
         <div className="flex flex-col gap-2 px-10 py-5">
@@ -28,9 +28,9 @@ function ProjectCard(props: Props) {
               </li>
             ))}
           </ul>
-          <Link to={props.project_url}>
-            <button className="rounded-lg bg-primaryAccent w-[5rem]">Go</button>
-          </Link>
+          <button className="rounded-lg bg-primaryAccent hover:bg-darkBlue transition ease-in-out w-[5rem]">
+            <Link to={props.project_url}>Go</Link>
+          </button>
         </div>
       </div>
     </>
