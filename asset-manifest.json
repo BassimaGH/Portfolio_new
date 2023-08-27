@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio_new/static/css/main.4bbf763b.css",
-    "main.js": "/Portfolio_new/static/js/main.9c4560fa.js",
+    "main.css": "/Portfolio_new/static/css/main.47625448.css",
+    "main.js": "/Portfolio_new/static/js/main.710384a6.js",
     "static/media/beauty.png": "/Portfolio_new/static/media/beauty.9e4c16e1e646d7738001.png",
     "static/media/floatingBoy.png": "/Portfolio_new/static/media/floatingBoy.2c764e14e9aa9c79b3bd.png",
     "static/media/guessTheNum.png": "/Portfolio_new/static/media/guessTheNum.23416f24c2fba766e2b0.png",
@@ -9,11 +9,11 @@
     "static/media/lunarLander.png": "/Portfolio_new/static/media/lunarLander.9edf88156f7b125e0231.png",
     "static/media/logo.svg": "/Portfolio_new/static/media/logo.b67f0ce3fd510a1ce5e2e4087fb63063.svg",
     "index.html": "/Portfolio_new/index.html",
-    "main.4bbf763b.css.map": "/Portfolio_new/static/css/main.4bbf763b.css.map",
-    "main.9c4560fa.js.map": "/Portfolio_new/static/js/main.9c4560fa.js.map"
+    "main.47625448.css.map": "/Portfolio_new/static/css/main.47625448.css.map",
+    "main.710384a6.js.map": "/Portfolio_new/static/js/main.710384a6.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bbf763b.css",
-    "static/js/main.9c4560fa.js"
+    "static/css/main.47625448.css",
+    "static/js/main.710384a6.js"
   ]
 }
