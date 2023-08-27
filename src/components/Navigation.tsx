@@ -65,7 +65,7 @@ function Navigation() {
               setIsNavExpanded(!isNavExpanded);
             }}
           >
-            <FiMenu className="cursor-pointer text-primaryLight text-[2rem] mobile:text-[2.5rem] hover:text-slate-500 transition ease-in-out" />
+            <FiMenu className="cursor-pointer text-primaryLight text-[2rem] hover:text-slate-500 transition ease-in-out" />
           </div>
 
           <div
@@ -84,13 +84,13 @@ function Navigation() {
               >
                 <MdClose className="cursor-pointer text-primaryLight text-2xl hover:text-slate-500 transition ease-in-out" />
               </div>
-              <div className="flex flex-col lg:flex-row gap-12 text-secondaryColor_lilac text-manrope">
+              <div className="flex flex-col lg:flex-row gap-12">
                 {navItems.map((item, i) => {
                   if (window.innerWidth < 1022) {
                     return (
                       <Link smooth to={"#" + item.to} key={i}>
                         <li
-                          className="text-xl font-clashDisplay text-primaryLight hover:text-slate-600 transition ease-in-out"
+                          className="text-xl text-primaryLight hover:text-slate-600 transition ease-in-out"
                           onClick={() => {
                             setIsNavExpanded(!isNavExpanded);
                           }}
@@ -102,7 +102,7 @@ function Navigation() {
                   } else {
                     return (
                       <Link smooth to={"#" + item.to} key={i}>
-                        <li className="text-xl font-clashDisplay text-primaryLight hover:text-slate-600 transition ease-in-out">
+                        <li className="text-xl text-primaryLight hover:text-slate-600 transition ease-in-out">
                           {item.title}
                         </li>
                       </Link>

@@ -83,7 +83,9 @@ function ProjectsSection() {
         id="projects"
         className="bg-primaryLight p-10 py-[5rem] flex flex-col items-center"
       >
-        <h1 className="mb-[3rem] text-3xl">Personal Projects</h1>
+        <h1 className="mb-[3rem] text-3xl md:text-[2rem] md:font-bold md:tracking-[1rem]">
+          Personal Projects
+        </h1>
         <div className="flex flex-row flex-wrap justify-center gap-5">
           {projects.map((project, i) => (
             <section

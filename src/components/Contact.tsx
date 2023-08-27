@@ -34,19 +34,19 @@ function Contact() {
     <>
       <div
         id="contact"
-        className="bg-primaryAccent text-primaryLight p-[4rem] sm:p-[6rem] md:p-[10rem] py-[5rem] h-[35rem] flex flex-col gap-5 justify-center items-start"
+        className="bg-primaryAccent text-primaryLight p-[4rem] sm:p-[6rem] md:p-[10rem] py-[5rem] h-[35rem] flex flex-col gap-5 justify-center items-start shadow-inner shadow-slate-700"
       >
         <h1 className="text-[3rem] font-bold">Contact</h1>
         <p className="text-[1.5rem]">
-          I am intrested in remote internships or jobs. If you are intrested,
-          you can contact me using these platforms.
+          I'm looking for internships or entry-level work. If you're interested,
+          please get in touch with me via these platforms or email!
         </p>
 
         <div className="flex flex-row gap-5 mt-4" data-aos="fade-up">
           {contacts.map((contact, id) => {
             return (
               <div className="bg-primaryDark hover:bg-darkBlue transition ease-in-out p-5 sm:p-7 rounded-full">
-                <Link to={contact.link}>
+                <Link target="_blank" to={contact.link}>
                   <h1 className="text-[2rem] sm:text-[2.9rem]" key={id}>
                     {contact.icon}
                   </h1>

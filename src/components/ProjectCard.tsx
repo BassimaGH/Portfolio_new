@@ -28,9 +28,13 @@ function ProjectCard(props: Props) {
               </li>
             ))}
           </ul>
-          <button className="rounded-lg bg-primaryAccent hover:bg-darkBlue transition ease-in-out w-[5rem]">
-            <Link to={props.project_url}>Go</Link>
-          </button>
+          <div className="">
+            <Link target="_blank" to={props.project_url}>
+              <button className="rounded-lg bg-primaryAccent hover:bg-darkBlue transition ease-in-out w-[5rem]">
+                Go
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </>
