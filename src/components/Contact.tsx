@@ -45,7 +45,10 @@ function Contact() {
         <div className="flex flex-row gap-5 mt-4" data-aos="fade-up">
           {contacts.map((contact, id) => {
             return (
-              <div className="bg-primaryDark hover:bg-darkBlue transition ease-in-out p-5 sm:p-7 rounded-full">
+              <div
+                key={id}
+                className="bg-primaryDark hover:bg-darkBlue transition ease-in-out p-5 sm:p-7 rounded-full"
+              >
                 <Link target="_blank" to={contact.link}>
                   <h1 className="text-[2rem] sm:text-[2.9rem]" key={id}>
                     {contact.icon}

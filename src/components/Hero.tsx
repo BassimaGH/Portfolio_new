@@ -20,9 +20,9 @@ function Hero() {
     <>
       <div
         id="hero"
-        className="bg-primaryDark p-10 py-[10rem] h-[37rem] flex text-primaryLight flex-col justify-center items-center"
+        className="bg-primaryDark p-6 sm:p-10 py-[10rem] h-[37rem] flex text-primaryLight flex-col justify-center items-center"
       >
-        <h1 className="text-[0.8rem] sm:text-[1.3rem] md:text-[2rem] mb-[2rem] font-thin tracking-[1rem] md:tracking-[2rem]">
+        <h1 className="text-[0.8rem] sm:text-[1.3rem] md:text-[2rem] mb-[2rem] font-normal md:font-thin tracking-[0.6rem] sm:tracking-[1rem] md:tracking-[2rem]">
           {text.match(/./gu)!.map((char, index) => (
             <span
               className="animate-text-reveal inline-block [animation-fill-mode:backwards]"
