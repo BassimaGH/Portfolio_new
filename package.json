@@ -4,23 +4,23 @@
   "private": true,
   "homepage": "https://BassimaGH.github.io/Portfolio_new",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/aos": "^3.0.4",
+    "@types/aos": "^3.0.7",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.36",
-    "@types/react": "^18.2.13",
-    "@types/react-dom": "^18.2.6",
-    "@types/react-router-hash-link": "^2.4.6",
+    "@types/node": "^16.18.61",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@types/react-router-hash-link": "^2.4.9",
     "aos": "^3.0.0-beta.6",
-    "axios": "^1.4.0",
-    "framer-motion": "^10.12.18",
+    "axios": "^1.6.2",
+    "framer-motion": "^10.16.5",
     "gh-pages": "^6.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.10.1",
-    "react-router-dom": "^6.13.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.19.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
@@ -53,6 +53,8 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.2"
+    "@babel/core": "^7.23.3",
+    "nth-check": "^2.1.1",
+    "tailwindcss": "^3.3.5"
   }
 }
