@@ -15,6 +15,7 @@ const skills = [
   "SQLite3",
   "C#",
   "React",
+  "WordPress",
 ];
 
 function Skills() {
