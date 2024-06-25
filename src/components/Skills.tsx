@@ -16,6 +16,12 @@ const skills = [
   "C#",
   "React",
   "WordPress",
+  "Docker",
+  "Next.js",
+  "Figma",
+  "Adobe Illustrator",
+  "Adobe XD",
+  "Adobe indesign",
 ];
 
 function Skills() {

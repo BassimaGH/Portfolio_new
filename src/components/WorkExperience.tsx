@@ -5,19 +5,19 @@ import { useEffect } from "react";
 
 const experiences = [
   {
-    role: "Frontend develoepr",
+    role: "Teaching Assistant",
+    company: "Jönköping University",
+    duration: "Jan 2024 - May 2024",
+  },
+  {
+    role: "Frontend developer",
     company: "SLOVE",
     duration: "Mar 2023 - Jul 2023",
   },
   {
-    role: "Frontend develoepr and UI/UX designer",
+    role: "Frontend developer and UI/UX designer",
     company: "Chingu",
     duration: "Jan 2023 - Feb 2023",
-  },
-  {
-    role: "UI designer",
-    company: "The Dynamics",
-    duration: "Nov 2021 - May 2022",
   },
 ];
 
@@ -54,17 +54,15 @@ function WorkExperience() {
           Work Experience
         </h1>
         {/* Make a grid with divs that contain information about my experience: role, company name, and duration.(Make arrange the dives in a zigzag. Make them float and add animation when the are shown on the screen)*/}
-        <div className="flex flex-col md:grid grid-cols-2 grid-rows-3 items-start gap-5">
+        <div className="flex flex-col md:grid grid-cols-2 grid-rows-3 grid-flow-row-dense items-start gap-5">
           {experiences.map((experience, i) => {
             return (
               <div
                 key={i}
                 data-aos={i % 2 === 0 ? "fade-left" : "fade-right"}
-                className={
-                  i % 2 === 0
-                    ? "shadow-inner shadow-black w-[23rem] sm:w-[33rem] md:w-auto bg-darkBlue hover:drop-shadow-xl transition ease-in-out text-primaryLight rounded-3xl p-10 flex flex-col gap-2 col-start-2 col-end-1 row-span-2"
-                    : "shadow-inner shadow-black w-[23rem] sm:w-[33rem] md:w-auto bg-darkBlue hover:drop-shadow-xl transition ease-in-out text-primaryLight rounded-3xl p-10 flex flex-col gap-2 col-start-2 col-end-2 row-start-2"
-                }
+                className={`shadow-inner shadow-black w-[23rem] sm:w-[33rem] md:w-auto bg-darkBlue hover:drop-shadow-xl transition ease-in-out text-primaryLight rounded-3xl p-10 flex flex-col gap-2 ${
+                  i % 2 === 0 ? 'col-start-1 row-span-2' : 'col-start-2 row-start-2'
+                }`}
               >
                 <h1 className="text-2xl font-bold">{experience.role}</h1>
                 <h2 className="tracking-widest">{experience.company}</h2>

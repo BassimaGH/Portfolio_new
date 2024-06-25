@@ -35,7 +35,7 @@ function Hero() {
         </h1>
 
         <p className="text-[2.3rem] sm:text-[3.5rem] font-bold">
-          Frontend developer
+          Frontend developer & UI designer
         </p>
         <Link smooth to={"#projects"}>
           <button
