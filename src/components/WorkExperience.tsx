@@ -7,7 +7,7 @@ const experiences = [
   {
     role: "Teaching Assistant",
     company: "Jönköping University",
-    duration: "Jan 2024 - May 2024",
+    duration: "Jan 2024 - May 2024, Aug 2024 - present",
   },
   {
     role: "Frontend developer",

@@ -38,7 +38,7 @@ function Contact() {
       >
         <h1 className="text-[3rem] font-bold">Contact</h1>
         <p className="text-[1.5rem]">
-          I'm looking for internships or entry-level work. If you're interested,
+          I'm looking for traineeships or entry-level work. If you're interested,
           please get in touch with me via these platforms or email!
         </p>
 

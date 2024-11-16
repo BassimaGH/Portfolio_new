@@ -22,12 +22,14 @@ function About() {
         <div data-aos="fade-left">
           <h1 className="text-[2.5rem] sm:text-[3rem] font-bold">About</h1>
           <p className="pr-0 lx:pr-[35rem] text-[1.3rem] sm:text-[1.5rem]">
-            I am a front-end developer and a UI designer that has a solid programming/design foundation
+            I am a <b>front-end developer</b> and a <b>UI designer</b> that has a solid programming/design foundation
             and is passionate about learning new programming technologies and design trends. My
             current programming stack makes it possible for me to create and
             deploy websites or web-applications that are fully responsive and
             secure. Further, my design skills allow me to design interfaces for any digital platform 
             depending on its theme!
+            Also, my knowladge in <b>cybersecurity</b> gives me a broad prespictive on an organisation/product security and the 
+            tools used to ensure their safety and compliance to relevant standards.   
           </p>
         </div>
       </div>

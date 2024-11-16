@@ -22,6 +22,9 @@ const skills = [
   "Adobe Illustrator",
   "Adobe XD",
   "Adobe indesign",
+  "Kali linux",
+  "Powershell",
+  "Netcat",
 ];
 
 function Skills() {
