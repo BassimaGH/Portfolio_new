@@ -17,10 +17,10 @@ function About() {
     <>
       <div
         id="about"
-        className="bg-primaryLight p-[4rem] sm:p-[6rem] md:p-[10rem] py-[5rem] h-[35rem] text-primaryDark flex flex-col justify-center items-start rounded-t-[5rem]"
+        className="bg-primaryLight p-[4rem] sm:p-[6rem] md:p-[10rem] py-[5rem] md:h-[44rem] h-[50rem] text-primaryDark flex flex-col justify-center items-start rounded-t-[5rem]"
       >
         <div data-aos="fade-left">
-          <h1 className="text-[2.5rem] sm:text-[3rem] font-bold">About</h1>
+          <h1 className="text-[2.5rem] text-center sm:text-start pb-4 sm:pb-0 sm:text-[3rem] font-bold">About</h1>
           <p className="pr-0 lx:pr-[35rem] text-[1.3rem] sm:text-[1.5rem]">
             I am a <b>front-end developer</b> and a <b>UI designer</b> that has a solid programming/design foundation
             and is passionate about learning new programming technologies and design trends. My
