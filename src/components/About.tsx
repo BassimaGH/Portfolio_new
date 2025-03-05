@@ -28,7 +28,7 @@ function About() {
             deploy websites or web-applications that are fully responsive and
             secure. Further, my design skills allow me to design interfaces for any digital platform 
             depending on its theme!
-            Also, my knowladge in <b>cybersecurity</b> gives me a broad prespictive on an organisation/product security and the 
+            Also, my knowledge in <b>cybersecurity</b> gives me a broad perspective on an organisation/product security and the 
             tools used to ensure their safety and compliance to relevant standards.   
           </p>
         </div>
